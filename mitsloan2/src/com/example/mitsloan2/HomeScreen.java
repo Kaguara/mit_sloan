@@ -1,7 +1,6 @@
 package com.example.mitsloan2;
 
 import com.example.mitsloan2.adapters.TabsPagerAdapter;
-
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.app.ActionBar.Tab;
@@ -44,6 +43,24 @@ public class HomeScreen extends ActionBarActivity implements TabListener{
         for (String tab_name : tabs) {
             actionBar.addTab(actionBar.newTab().setText(tab_name).setTabListener(this));
         }
+        
+        viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+       	 
+    	    @Override
+    	    public void onPageSelected(int position) {
+    	        // on changing the page
+    	        // make respected tab selected
+    	        actionBar.setSelectedNavigationItem(position);
+    	    }
+    	 
+    	    @Override
+    	    public void onPageScrolled(int arg0, float arg1, int arg2) {
+    	    }
+    	 
+    	    @Override
+    	    public void onPageScrollStateChanged(int arg0) {
+    	    }
+    	});
     }
 
 
@@ -101,5 +118,9 @@ public class HomeScreen extends ActionBarActivity implements TabListener{
 		// TODO Auto-generated method stub
 		
 	}
+	
+	
+	
+	
     
 }
