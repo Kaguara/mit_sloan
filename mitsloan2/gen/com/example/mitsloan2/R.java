@@ -1008,24 +1008,25 @@ containing a value of this type.
         public static final int list_pressed_example=0x7f020070;
         public static final int list_selector=0x7f020071;
         public static final int menu_dropdown_panel_example=0x7f020072;
-        public static final int ory_okolloh_pic=0x7f020073;
-        public static final int progress_bg_example=0x7f020074;
-        public static final int progress_horizontal_example=0x7f020075;
-        public static final int progress_primary_example=0x7f020076;
-        public static final int progress_secondary_example=0x7f020077;
-        public static final int selectable_background_example=0x7f020078;
-        public static final int spinner_ab_default_example=0x7f020079;
-        public static final int spinner_ab_disabled_example=0x7f02007a;
-        public static final int spinner_ab_focused_example=0x7f02007b;
-        public static final int spinner_ab_pressed_example=0x7f02007c;
-        public static final int spinner_background_ab_example=0x7f02007d;
-        public static final int tab_indicator_ab_example=0x7f02007e;
-        public static final int tab_selected_example=0x7f02007f;
-        public static final int tab_selected_focused_example=0x7f020080;
-        public static final int tab_selected_pressed_example=0x7f020081;
-        public static final int tab_unselected_example=0x7f020082;
-        public static final int tab_unselected_focused_example=0x7f020083;
-        public static final int tab_unselected_pressed_example=0x7f020084;
+        public static final int no_image=0x7f020073;
+        public static final int ory_okolloh_pic=0x7f020074;
+        public static final int progress_bg_example=0x7f020075;
+        public static final int progress_horizontal_example=0x7f020076;
+        public static final int progress_primary_example=0x7f020077;
+        public static final int progress_secondary_example=0x7f020078;
+        public static final int selectable_background_example=0x7f020079;
+        public static final int spinner_ab_default_example=0x7f02007a;
+        public static final int spinner_ab_disabled_example=0x7f02007b;
+        public static final int spinner_ab_focused_example=0x7f02007c;
+        public static final int spinner_ab_pressed_example=0x7f02007d;
+        public static final int spinner_background_ab_example=0x7f02007e;
+        public static final int tab_indicator_ab_example=0x7f02007f;
+        public static final int tab_selected_example=0x7f020080;
+        public static final int tab_selected_focused_example=0x7f020081;
+        public static final int tab_selected_pressed_example=0x7f020082;
+        public static final int tab_unselected_example=0x7f020083;
+        public static final int tab_unselected_focused_example=0x7f020084;
+        public static final int tab_unselected_pressed_example=0x7f020085;
     }
     public static final class id {
         public static final int action_bar=0x7f05001c;
@@ -2483,7 +2484,7 @@ containing a value of this type.
          */
         public static final int[] MenuView = {
             0x010100ae, 0x0101012c, 0x0101012d, 0x0101012e,
-            0x0101012f, 0x01010130, 0x01010131, 0x01010435
+            0x0101012f, 0x01010130, 0x01010131, 0x0101041a
         };
         /**
           <p>

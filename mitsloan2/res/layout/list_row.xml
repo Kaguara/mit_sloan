@@ -22,8 +22,7 @@
             android:id="@+id/list_image"
             android:layout_width="50dip"
             android:layout_height="50dip"
-            android:src="@drawable/fred_pic"/>
- 
+            android:src="@drawable/fred_pic"/> 
     </LinearLayout>
  
     <!-- Name Of Speaker-->
