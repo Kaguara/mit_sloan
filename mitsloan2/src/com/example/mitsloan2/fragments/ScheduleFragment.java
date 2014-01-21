@@ -103,12 +103,10 @@ public class ScheduleFragment extends Fragment{
     /* This function starts the asynchronous task to get the 
      * images and data stored in the back-end.
      * */
-     
-    
+ 
     //Async Class to asynchronously load the data from our backend
     public class MyAsyncTask extends AsyncTask<String, Void, List<Map<String, String>>>{
        private Exception exception;
-       
        protected List<Map<String, String>> doInBackground(String...urls){
     	   List<Map<String, String>> songList = new ArrayList<Map<String, String>>();
     	   for (String url : urls){

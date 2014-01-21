@@ -22,7 +22,7 @@ public class SpeakersFragment extends Fragment{
 		//Intent displayImageGrid = new Intent(getActivity(), GridActivity.class);
         //startActivity(displayImageGrid);
 		
-		View rootView = inflater.inflate(R.layout.fragment_speakers, container, false);
+		View rootView = inflater.inflate(R.layout.fragment_myschedule, container, false);
 		return rootView;
 		
 	}

@@ -22,7 +22,7 @@ public class HomeScreen extends ActionBarActivity implements TabListener{
     private TabsPagerAdapter mAdapter;
     private ActionBar actionBar;
 	// Tab titles
-    private String[] tabs = { "Schedule", "Speakers", "Connections" };
+    private String[] tabs = { "Schedule", "My Schedule", "Map" };
 	
     @SuppressLint("NewApi")
 	@Override
@@ -75,17 +75,16 @@ public class HomeScreen extends ActionBarActivity implements TabListener{
     
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle presses on the action bar items
-        switch (item.getItemId()) {
-            case R.id.action_search:
-                openSearch();
-                return true;
-            case R.id.action_settings:
-                openSettings();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
+        int itemId = item.getItemId();
+		if (itemId == R.id.action_search) {
+			openSearch();
+			return true;
+		} else if (itemId == R.id.action_settings) {
+			openSettings();
+			return true;
+		} else {
+			return super.onOptionsItemSelected(item);
+		}
     }
     
     public void openSearch(){

@@ -1,6 +1,6 @@
 package com.example.mitsloan2.adapters;
 
-import com.example.mitsloan2.fragments.ConnectionsFragment;
+import com.example.mitsloan2.fragments.MapFragment;
 import com.example.mitsloan2.fragments.ScheduleFragment;
 import com.example.mitsloan2.fragments.SpeakersFragment;
 
@@ -26,7 +26,7 @@ public class TabsPagerAdapter extends FragmentPagerAdapter{
             return new SpeakersFragment();
         case 2:
             // Movies fragment activity
-            return new ConnectionsFragment();
+            return new MapFragment();
         }
  
         return null;
