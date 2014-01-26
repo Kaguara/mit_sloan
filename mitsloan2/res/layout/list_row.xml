@@ -12,16 +12,6 @@
     
  
     <!-- Name Of Speaker-->
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/duration"
-        android:text="Investment Panel"
-        android:textColor="#040404"
-        android:typeface="sans"
-        android:textSize="15sp"
-        android:textStyle="bold"/>
         <!---->
         <!--  android:layout_alignTop="@+id/thumbnail" -->
  
@@ -33,10 +23,11 @@
         android:layout_below="@id/title"
         android:layout_toRightOf="@+id/duration"
         android:paddingTop="5dip"
+        android:paddingBottom="10dip"
         android:textColor="#343434"
-        android:textSize="12sp"
+        android:textSize="16sp"
         android:layout_marginTop="1dip"
-        android:text="Founder, African Leadership Academy" />
+        android:text="Trade and Infrastructure" />
        <!--  -->
        
      <!--  ListRow Left sided Thumbnail image -->
@@ -45,6 +36,7 @@
         android:layout_height="wrap_content"
         android:padding="3dip"
         android:paddingTop="15dip"
+        android:paddingLeft="10dip"
         android:layout_toRightOf="@+id/duration"
         android:layout_below="@id/artist"
         android:background="@drawable/image_bg"
@@ -78,20 +70,6 @@
         </LinearLayout>
  
     <!-- Rightend Duration -->
-    <TextView
-        android:id="@+id/duration"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignTop="@id/title"
-        android:paddingTop="5dip"
-        android:paddingRight="10dip"
-        android:gravity="right"
-        android:text="3:45 - 5:45"
-        android:layout_marginRight="5dip"
-        android:textSize="10sp"
-        android:textColor="#10bcc9"
-        android:textStyle="bold"/>
  
      <!-- Rightend Arrow -->
      <ImageView 
@@ -100,6 +78,35 @@
         android:src="@drawable/arrow"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"/>
-    
+
+     <TextView
+         android:id="@+id/duration"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/thumbnail"
+         android:layout_alignParentLeft="true"
+         android:layout_alignTop="@+id/artist"
+         android:background="#7D0505"
+         android:gravity="right"
+         android:paddingBottom="10dip"
+         android:paddingRight="20dip"
+         android:paddingTop="5dip"
+         android:text="3:30 - 5:45"
+         android:textStyle="bold"
+         android:textColor="#FFFFFF"
+         android:textSize="16sp" />
+
+     <TextView
+         android:id="@+id/title"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:background="#7D0505"
+         android:text="Investment Panel"
+         android:textSize="16sp"
+         android:textStyle="bold"
+         android:textColor="#FFFFFF"
+         android:typeface="sans" />
 
 </RelativeLayout>

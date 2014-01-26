@@ -140,7 +140,6 @@ public class ScheduleFragment extends Fragment{
 
 	@Override
 	protected void onPostExecute(List<Map<String, String>> result) {
-		// TODO Auto-generated method stub
 		    ListView listView = (ListView) getActivity().findViewById(R.id.list);
 		    // get an adapter by passing xml data list
 		    adapter = new LazyAdapter(getActivity(), result);

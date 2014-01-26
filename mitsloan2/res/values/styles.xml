@@ -27,12 +27,15 @@
     </style>
     
     <style name="ActionBar.Solid.Example" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
-        <item name="background">@drawable/ab_solid_example</item>
-        <item name="backgroundStacked">@drawable/ab_stacked_solid_example</item>
-        <item name="backgroundSplit">@drawable/ab_bottom_solid_example</item>
+        <item name="android:background">#7D0505</item>
+        <item name="backgroundStacked">#7D0505</item>
+        <item name="backgroundSplit">#7D0505</item>
         <item name="progressBarStyle">@style/ProgressBar.Example</item>
     </style>
-
+<!-- @drawable/ab_solid_example 
+     @drawable/ab_stacked_solid_example
+     @drawable/ab_bottom_solid_example
+     -->
     <style name="ActionBar.Transparent.Example" parent="@style/Widget.AppCompat.Light.ActionBar">
         <item name="background">@drawable/ab_transparent_example</item>
         <item name="progressBarStyle">@style/ProgressBar.Example</item>
@@ -68,6 +71,32 @@
     <style name="Theme.Example.Widget" parent="@style/Theme.AppCompat">
         <item name="popupMenuStyle">@style/PopupMenu.Example</item>
         <item name="dropDownListViewStyle">@style/DropDownListView.Example</item>
+    </style>
+    
+    <!--  -->
+    <style name="FeedbackQuestion">
+        <item name="android:background">@drawable/feedback_question_background</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        
+        <item name="android:textStyle">italic</item>
+    </style>
+    <!-- <item name="android:fontFamily">sans-serif-light</item> -->
+    
+    <style name="FeedbackQuestionGuideText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/accent_1</item>
+    </style>
+    
+    <style name="FeedbackQuestionGuideText.Right">
+        <item name="android:gravity">right</item>
     </style>
     
 

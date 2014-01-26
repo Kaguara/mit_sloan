@@ -9,4 +9,37 @@
     <string name="title_activity_speakers">SpeakersActivity</string>
     <string name="thakkar">Ashish Thakkar is the Founder and Managing Director of the Mara Group of companies. In 15 years, he has taken the Group from the humble beginnings of selling computers to friends, to the global firm that exists today in 18 African countries, employing over 4,500 people. Thakkar is passionate about the growth and development of Africa and focuses most of his energy on commercial and philanthropic initiatives across the continent. In 2010, the Mara Group was identified by the World Economic Forum as a dynamic high-growth company with the potential to be a driving force for economic and social change. Thakkar has been appointed on the advisory panels to several heads of state in sub-Saharan Africa and is also a team member of the Commonwealth Business Council and COMESA. He will be representing East Africa on Virgin Galactic\'s first mission into space, making him Africa\'s second astronaut.</string>
 
+     <!-- Feedback -->
+    <string name="session_feedback_submitlink">Submit Feedback</string>
+    <string name="session_rating_label">Rate this session overall:</string>
+
+    <string name="session_feedback_relevance">
+        How relevant was this session to your coding projects?
+    </string>
+
+    <string name="session_feedback_notgreat">Not so awesome</string>
+    <string name="session_feedback_great">Awesome</string>
+
+    <string name="session_feedback_notrel">Not relevant</string>
+    <string name="session_feedback_rel">Relevant</string>
+
+    <string name="session_feedback_content">The content was:</string>
+    <string name="session_feedback_basic">Too basic</string>
+    <string name="session_feedback_advanced">Too advanced</string>
+
+    <string name="session_feedback_speaker_quality">Speaker quality:</string>
+    <string name="session_feedback_poor">Poor</string>
+    <string name="session_feedback_outstanding">Outstanding</string>
+    <string name="session_feedback_tell_us">Tell us!</string>
+    <string name="session_feedback_6months">
+        Will you use the technology featured in this section in the next 6 months?
+    </string>
+    <string name="session_feedback_probably">Probably</string>
+    <string name="session_feedback_probnot">Probably not</string>
+    <string name="number_1">1</string>
+    <string name="number_2">2</string>
+    <string name="number_3">3</string>
+    <string name="number_4">4</string>
+    <string name="number_5">5</string>
+    <string name="session_feedback_other">Anything else we should know?</string>
 </resources>

@@ -22,8 +22,8 @@ public class MapFragment extends Fragment{
 			Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		View rootView = inflater.inflate(R.layout.fragment_indoor_map, container, false);
-		//Initialize the Map.
-		/*try {
+		/*//Initialize the Map.
+		try{
             // Loading map
             initilizeMap();
  
@@ -70,8 +70,7 @@ public class MapFragment extends Fragment{
         // Do a null check to confirm that we have not already instantiated the map.
         if (googleMap == null) {
             // Try to obtain the map from the SupportMapFragment.
-            googleMap = ((SupportMapFragment) getFragmentManager().findFragmentById(R.id.map))
-                    .getMap();
+            googleMap = ((SupportMapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
             // Check if we were successful in obtaining the map.
             if (googleMap != null) {
             	initilizeMap();
