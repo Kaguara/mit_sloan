@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+    </RadioGroup>
+
+</LinearLayout> -->
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_view"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:background="#7D0505"
+            android:clipToPadding="false">
+
+            <TextView android:id="@+id/session_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+                <!-- style="@style/TextHeader"  -->
+
+            <!-- Q1 -->
+            <TextView style="@style/FeedbackQuestion"
+                android:text="session_rating_label"
+                android:textColor="#FFFFFF"
+                android:textAlignment="viewStart" />
+
+            <include android:id="@+id/session_rating_container"
+                layout="@layout/rating_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-4dp">
+
+                <TextView
+                    style="@style/FeedbackQuestionGuideText"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/session_feedback_notgreat" />
+
+                <TextView
+                    style="@style/FeedbackQuestionGuideText.Right"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/session_feedback_great" />
+            </LinearLayout>
+
+            <!-- Q1 -->
+            <TextView style="@style/FeedbackQuestion"
+                android:textColor="#FFFFFF"
+                android:text="@string/session_feedback_relevance" />
+
+            <include android:id="@+id/session_feedback_q1_container"
+                layout="@layout/rating_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-4dp">
+
+                <TextView
+                    style="@style/FeedbackQuestionGuideText"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/session_feedback_notrel" />
+
+                <TextView
+                    style="@style/FeedbackQuestionGuideText.Right"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/session_feedback_rel" />
+            </LinearLayout>
+
+            <!-- Q2 -->
+            <TextView style="@style/FeedbackQuestion"
+                android:textColor="#FFFFFF"
+                android:text="@string/session_feedback_content" />
+
+            <include android:id="@+id/session_feedback_q2_container"
+                layout="@layout/rating_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-4dp">
+
+                <TextView
+                    style="@style/FeedbackQuestionGuideText"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/session_feedback_basic" />
+
+                <TextView
+                    style="@style/FeedbackQuestionGuideText.Right"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/session_feedback_advanced" />
+            </LinearLayout>
+
+            <!-- Q3 -->
+            <TextView style="@style/FeedbackQuestion"
+                android:textColor="#FFFFFF"
+                android:text="@string/session_feedback_speaker_quality" />
+
+            <include android:id="@+id/session_feedback_q3_container"
+                layout="@layout/rating_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-4dp">
+
+                <TextView
+                    style="@style/FeedbackQuestionGuideText"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/session_feedback_poor" />
+
+                <TextView
+                    style="@style/FeedbackQuestionGuideText.Right"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/session_feedback_outstanding" />
+            </LinearLayout>
+
+            <!-- Q4 -->
+            <TextView style="@style/FeedbackQuestion"
+                android:textColor="#FFFFFF"
+                android:text="@string/session_feedback_6months" />
+
+            <RadioGroup
+                android:id="@+id/session_feedback_q4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingBottom="4dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/session_feedback_probnot" 
+                    android:textColor="#FFFFFF"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/session_feedback_probably"
+                    android:textColor="#FFFFFF" />
+
+            </RadioGroup>
+
+            <TextView style="@style/FeedbackQuestion"
+                android:textColor="#FFFFFF"
+                android:text="@string/session_feedback_other" />
+
+            <EditText
+                android:id="@+id/session_feedback_comments"
+                android:minLines="1"
+                android:hint="@string/session_feedback_tell_us"
+                android:layout_marginTop="8dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginRight="-4dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:scrollbars="vertical" />
+        </LinearLayout>
+
+        <!-- Submit button -->
+
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/list_divider_holo_light" />
+
+        <FrameLayout android:id="@+id/submit_feedback_button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/activatable_item_background"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/session_feedback_submitlink">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dp"
+                android:drawableLeft="@drawable/ic_action_done"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textSize="14sp"
+                android:text="@string/session_feedback_submitlink" />
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

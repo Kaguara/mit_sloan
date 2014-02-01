@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#7D0505" >
+
+    <RelativeLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/image_bg"
+        android:padding="3dip"
+        android:paddingTop="15dip" android:layout_weight="0.18">
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ashish" />
+
+        
+		
+
+    </RelativeLayout>
+    <TextView
+            android:id="@+id/tv_speaker_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/thumbnail"
+            android:text="E-mail: \nLinkedIn: "
+            android:textColor="#FFFFFF"
+            android:layout_weight="1" />
+    
+    <TextView 
+        android:id="@+id/tv_speakerdetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thumbnail"
+        android:textColor="#FFFFFF"
+        android:text="@string/thakkar">
+     </TextView>
+    
+    
+</RelativeLayout>
