@@ -88,8 +88,8 @@ public class HomeScreen extends ActionBarActivity implements TabListener{
     }
     
     public void openSearch(){
-    	Intent speakers_intent = new Intent(this, SpeakersActivity.class);
-    	startActivity(speakers_intent);
+    	Intent feedback_intent = new Intent(this, FeedbackActivity.class);
+    	startActivity(feedback_intent);
     }
     
     public void openSettings(){

@@ -14,7 +14,7 @@
     <string name="session_rating_label">Rate this session overall:</string>
 
     <string name="session_feedback_relevance">
-        How relevant was this session to your coding projects?
+        How relevant was this session to your background?
     </string>
 
     <string name="session_feedback_notgreat">Not so awesome</string>
@@ -32,7 +32,7 @@
     <string name="session_feedback_outstanding">Outstanding</string>
     <string name="session_feedback_tell_us">Tell us!</string>
     <string name="session_feedback_6months">
-        Will you use the technology featured in this section in the next 6 months?
+        Will you use the information from this panel in the next 6 months?
     </string>
     <string name="session_feedback_probably">Probably</string>
     <string name="session_feedback_probnot">Probably not</string>
