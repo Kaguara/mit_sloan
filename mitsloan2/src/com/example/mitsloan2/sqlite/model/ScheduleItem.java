@@ -1,6 +1,6 @@
 package com.example.mitsloan2.sqlite.model;
 
-public class ScheduleModel {
+public class ScheduleItem {
 	
 	int ID;
 	String start_time;
@@ -11,10 +11,10 @@ public class ScheduleModel {
 	String location;
 	
 	// constructors
-    public ScheduleModel() {
+    public ScheduleItem() {
     }
  
-    public ScheduleModel(String start_time, String end_time, String panel_title, String panel_description, String speakers,
+    public ScheduleItem(String start_time, String end_time, String panel_title, String panel_description, String speakers,
 	String location) {
         this.start_time = start_time;
         this.end_time = end_time;
@@ -38,8 +38,8 @@ public class ScheduleModel {
         this.end_time = end_time;
     }
      
-    public void setPanelTitle(String panel_title){
-        this.panel_title = panel_title;
+    public void setPanelTitle(String panel_t){
+        this.panel_title = panel_t;
     }
     
     public void setPanelDescription(String panel_title){
@@ -55,7 +55,7 @@ public class ScheduleModel {
     }
  
     // getters
-    public long getId() {
+    public int getId() {
         return this.ID;
     }
  

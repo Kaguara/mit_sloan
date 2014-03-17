@@ -57,7 +57,7 @@ public class LazyAdapter extends BaseAdapter{
             title.setText(song.get(ScheduleElement.TITLE));
             artist.setText(song.get(ScheduleElement.ARTIST));
             duration.setText(song.get(ScheduleElement.DURATION));
-            imageLoader.DisplayImage(song.get(ScheduleElement.THUMB_URL), thumbImage);
+            //imageLoader.DisplayImage(song.get(ScheduleElement.THUMB_URL), thumbImage);
             this.notifyDataSetChanged(); // Important!
         }
 

@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android" 
       xmlns:mitsloan="http://schemas.android.com/apk/res-auto">
-    <!-- Search, should appear as action button -->
+    <!-- Sponsors, should appear as action button -->
     <item android:id="@+id/action_search"
-          android:icon="@drawable/ic_action_search"
+          android:icon="@drawable/ic_action_important"
           android:title="@string/action_search"
           mitsloan:showAsAction="always" />
     <!-- Settings, should always be in the overflow -->
     <item android:id="@+id/action_settings"
           android:title="@string/action_settings"
           mitsloan:showAsAction="never" />
+    <!-- Panel, should appear as action button -->
+    <item android:id="@+id/action_panels"
+          android:icon="@drawable/ic_action_group"
+          android:title="panel menu"
+          mitsloan:showAsAction="always" />
 </menu>

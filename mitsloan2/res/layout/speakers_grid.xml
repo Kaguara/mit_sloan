@@ -1,13 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/grid_view"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:numColumns="auto_fit"
-    android:columnWidth="90dp"
-    android:horizontalSpacing="10dp"
-    android:verticalSpacing="10dp"
-    android:gravity="center"
-    android:stretchMode="columnWidth" >  
-     
-</GridView>
+    android:layout_height="fill_parent">
+    <TextView 
+        android:id="@+id/tv_paneldescription"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"/>
+        
+	<GridView 
+	    android:id="@+id/panel_grid_view"
+	    android:layout_below="@id/tv_paneldescription"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:numColumns="auto_fit"
+	    android:columnWidth="90dp"
+	    android:horizontalSpacing="10dp"
+	    android:verticalSpacing="10dp"
+	    android:gravity="center"
+	    android:stretchMode="columnWidth" >  
+	     
+	</GridView>
+	<Button 
+	    android:id="@+id/b_feedback"
+	    android:onClick="launchFeedack"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/panel_grid_view"
+	    android:background="#7D0505"
+	    android:text="FEEDBACK"
+	    android:textColor="#ffffff"/>
+</RelativeLayout>

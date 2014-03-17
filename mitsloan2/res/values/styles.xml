@@ -4,8 +4,8 @@
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     -->
-    <style name="CustomActionBarTheme" parent="android:Theme.AppCompat.Light.DarkActionBar">
-        <item name="actionBarItemBackground">@drawable/selectable_background_example</item>
+    <!-- <style name="CustomActionBarTheme" parent="android:Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionBarItemBackground">@style/ActionBar.Solid.Example</item>
         <item name="popupMenuStyle">@style/PopupMenu.Example</item>
         <item name="dropDownListViewStyle">@style/DropDownListView.Example</item>
         <item name="actionBarTabStyle">@style/ActionBarTabStyle.Example</item>
@@ -14,12 +14,12 @@
         <item name="actionModeBackground">@drawable/cab_background_top_example</item>
         <item name="actionModeSplitBackground">@drawable/cab_background_bottom_example</item>
         <item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Example</item>
-        <!--
+        
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
-        -->
-    </style>
+       
+    </style> -->
 
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">

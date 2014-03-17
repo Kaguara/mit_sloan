@@ -48,27 +48,84 @@
 # view res/layout/abc_search_view.xml #generated:85
 -keep class android.support.v7.widget.SearchView$SearchAutoComplete { <init>(...); }
 
-# view AndroidManifest.xml #generated:41
+# view AndroidManifest.xml #generated:95
+-keep class com.example.mitsloan2.FeedbackActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:44
+-keep class com.example.mitsloan2.FullImageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:90
 -keep class com.example.mitsloan2.GridActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:23
+# view AndroidManifest.xml #generated:26
 -keep class com.example.mitsloan2.HomeScreen { <init>(...); }
 
-# view AndroidManifest.xml #generated:58
+# view AndroidManifest.xml #generated:49
+-keep class com.example.mitsloan2.PanelSelector { <init>(...); }
+
+# view AndroidManifest.xml #generated:112
 -keep class com.example.mitsloan2.RegisterActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:31
+# view AndroidManifest.xml #generated:34
 -keep class com.example.mitsloan2.RetrieveSchedule { <init>(...); }
 
-# view AndroidManifest.xml #generated:36
--keep class com.example.mitsloan2.SpeakersActivity { <init>(...); }
+# view AndroidManifest.xml #generated:39
+-keep class com.example.mitsloan2.SponsorsActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:46
+# view AndroidManifest.xml #generated:100
 -keep class com.example.mitsloan2.backend.GCMIntentService { <init>(...); }
 
-# view AndroidManifest.xml #generated:47
+# view AndroidManifest.xml #generated:59
+-keep class com.example.mitsloan2.panels.EnergyPanel { <init>(...); }
+
+# view AndroidManifest.xml #generated:64
+-keep class com.example.mitsloan2.panels.HealthCarePanel { <init>(...); }
+
+# view AndroidManifest.xml #generated:79
+-keep class com.example.mitsloan2.panels.IncubationPanel { <init>(...); }
+
+# view AndroidManifest.xml #generated:69
+-keep class com.example.mitsloan2.panels.InvestmentPanel { <init>(...); }
+
+# view AndroidManifest.xml #generated:54
+-keep class com.example.mitsloan2.panels.KeyNotePanel { <init>(...); }
+
+# view AndroidManifest.xml #generated:74
+-keep class com.example.mitsloan2.panels.TechnologyPanel { <init>(...); }
+
+# view AndroidManifest.xml #generated:84
+-keep class com.example.mitsloan2.panels.WomenPanel { <init>(...); }
+
+# view AndroidManifest.xml #generated:101
 -keep class com.google.android.gcm.GCMBroadcastReceiver { <init>(...); }
 
-# view res/layout/fragment_indoor_map.xml #generated:7
--keep class com.google.android.gms.maps.MapFragment { <init>(...); }
+# view res/layout/fragment_indoor_map.xml #generated:8
+-keep class com.google.android.gms.maps.SupportMapFragment { <init>(...); }
+
+# onClick res/layout/list_row.xml #generated:109
+-keepclassmembers class * { *** addToMySchedule(...); }
+
+# onClick res/layout/speakers_grid.xml #generated:23
+-keepclassmembers class * { *** launchFeedack(...); }
+
+# onClick res/layout/activity_panel_selection.xml #generated:25
+-keepclassmembers class * { *** openEnergyPanel(...); }
+
+# onClick res/layout/activity_panel_selection.xml #generated:39
+-keepclassmembers class * { *** openHealthPanel(...); }
+
+# onClick res/layout/activity_panel_selection.xml #generated:80
+-keepclassmembers class * { *** openIncubationPanel(...); }
+
+# onClick res/layout/activity_panel_selection.xml #generated:53
+-keepclassmembers class * { *** openInvestmentPanel(...); }
+
+# onClick res/layout/activity_panel_selection.xml #generated:13
+-keepclassmembers class * { *** openKeyNote(...); }
+
+# onClick res/layout/activity_panel_selection.xml #generated:67
+-keepclassmembers class * { *** openTechnologyPanel(...); }
+
+# onClick res/layout/activity_panel_selection.xml #generated:93
+-keepclassmembers class * { *** openWomenPanel(...); }
 

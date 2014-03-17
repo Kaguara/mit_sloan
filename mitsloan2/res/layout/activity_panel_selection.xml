@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/b_keynote"
+        android:onClick="openKeyNote"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="#7D0505"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:text="@string/keynote"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/b_energy"
+        android:onClick="openEnergyPanel"
+        android:layout_width="140dip"
+        android:layout_height="150dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/b_keynote"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="5dip"
+        android:background="#7D0505"
+        android:text="@string/energy"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/b_healthcare"
+        android:onClick="openHealthPanel"
+        android:layout_width="140dip"
+        android:layout_height="150dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/b_keynote"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dip"
+        android:layout_marginLeft="5dip"
+        android:background="#7D0505"
+        android:text="@string/healthcare"
+        android:textColor="#ffffff"  />
+    
+    <Button
+        android:id="@+id/b_investments"
+        android:onClick="openInvestmentPanel"
+        android:layout_width="140dip"
+        android:layout_height="150dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/b_energy"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="5dip"
+        android:background="#7D0505"
+        android:text="@string/investments"
+        android:textColor="#ffffff" />
+    
+    <Button
+        android:id="@+id/b_technology"
+        android:onClick="openTechnologyPanel"
+        android:layout_width="140dip"
+        android:layout_height="150dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/b_healthcare"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dip"
+        android:layout_marginLeft="5dip"
+        android:background="#7D0505"
+        android:text="@string/technology"
+        android:textColor="#ffffff"  />
+    <Button
+        android:id="@+id/b_incubation"
+        android:onClick="openIncubationPanel"
+        android:layout_width="140dip"
+        android:layout_height="150dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/b_investments"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="5dip"
+        android:background="#7D0505"
+        android:text="@string/venture"
+        android:textColor="#ffffff" />
+    <Button
+        android:id="@+id/b_women"
+        android:onClick="openWomenPanel"
+        android:layout_width="140dip"
+        android:layout_height="150dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/b_technology"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dip"
+        android:layout_marginLeft="5dip"
+        android:background="#7D0505"
+        android:text="@string/women"
+        android:textColor="#ffffff" />
+    
+</RelativeLayout>
+</ScrollView>

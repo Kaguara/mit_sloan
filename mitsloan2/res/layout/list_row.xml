@@ -43,7 +43,7 @@
         android:layout_marginRight="5dip">
         <!--  android:layout_alignParentLeft="true" -->
  
-        <ImageView
+        <ImageButton
             android:id="@+id/list_image"
             android:layout_width="50dip"
             android:layout_height="50dip"
@@ -61,27 +61,22 @@
         android:background="@drawable/image_bg"
         android:layout_marginRight="5dip">
         <!--  android:layout_alignParentLeft="true" -->
- 
-        <ImageView
+
+        <ImageButton
             android:id="@+id/list_image2"
             android:layout_width="50dip"
             android:layout_height="50dip"
-            android:src="@drawable/ory_okolloh_pic"/> 
+            android:src="@drawable/barton" />
+ 
         </LinearLayout>
  
     <!-- Rightend Duration -->
  
      <!-- Rightend Arrow -->
-     <ImageView 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/arrow"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"/>
 
      <TextView
          android:id="@+id/duration"
-         android:layout_width="wrap_content"
+         android:layout_width="120dip"
          android:layout_height="wrap_content"
          android:layout_alignBottom="@+id/thumbnail"
          android:layout_alignParentLeft="true"
@@ -103,10 +98,24 @@
          android:layout_alignParentLeft="true"
          android:layout_alignParentTop="true"
          android:background="#7D0505"
-         android:text="Investment Panel"
          android:textSize="16sp"
          android:textStyle="bold"
          android:textColor="#FFFFFF"
+         android:paddingLeft="10dip"
+         android:text="Investment Panel"
          android:typeface="sans" />
+     <!--  -->
+
+     <ImageButton
+         android:id="@+id/feedback_thumbnail"
+         android:layout_width="30dip"
+         android:layout_height="30dip"
+         android:layout_alignBottom="@+id/thumbnail2"
+         android:layout_toRightOf="@+id/thumbnail2"
+         android:layout_marginLeft="10dip"
+         android:layout_alignParentRight="true"
+         android:background="#7D0505"
+         android:onClick="addToMySchedule"
+         android:src="@drawable/ic_action_good2" />
 
 </RelativeLayout>

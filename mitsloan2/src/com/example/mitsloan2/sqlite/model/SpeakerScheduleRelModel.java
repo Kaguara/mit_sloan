@@ -41,6 +41,9 @@ public class SpeakerScheduleRelModel {
     public int getScheduleID() {
         return this.schedule_ID;
     }
+    
+    //setters
+  
 
   
 }

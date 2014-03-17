@@ -36,13 +36,14 @@
         android:paddingRight="12dp"
         android:clipToPadding="false">
 
-        <TextView 
+        <TextView
             android:id="@+id/rating_bar_label_1"
-            android:textStyle= "bold"
-        	android:textColor= "#7D0505"
-        	android:textSize="16dp"
-        	android:gravity="center"
-            android:text="1" />
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#7D0505"
+            android:textSize="16dp"
+            android:textStyle="bold" />
 
         <View android:layout_width="4dp"
             android:layout_height="match_parent" />

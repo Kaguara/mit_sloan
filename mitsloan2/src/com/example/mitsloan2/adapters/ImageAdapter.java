@@ -12,7 +12,22 @@ public class ImageAdapter extends BaseAdapter{
 	private Context mContext;
 
 	// Keep all Images in array
-    public Integer[] mThumbIds = { R.drawable.fred_pic, R.drawable.ory_okolloh_pic, R.drawable.barton, R.drawable.dangote};
+    public Integer[] mThumbIds = { R.drawable.access_bank_logo, 
+    		R.drawable.agco_logo, 
+    		R.drawable.chevron_logo,
+    		R.drawable.coca_cola_logo,
+    		R.drawable.corporate_council_on_africa,
+    		R.drawable.africadotcom_logo_medium,
+    		R.drawable.afrimind_logo,
+    		R.drawable.aib_logo,
+    		R.drawable.allafrica_logo,
+    		R.drawable.applause_africa,
+    		R.drawable.eft_logo,
+    		R.drawable.mui_pr,
+    		R.drawable.panatv_description,
+    		R.drawable.rockmeafrica,
+    		R.drawable.tech_moran,
+    		R.drawable.ventures_africa_logo};
     
 	// Constructor
     public ImageAdapter(Context c){
@@ -40,7 +55,7 @@ public class ImageAdapter extends BaseAdapter{
 		ImageView imageView = new ImageView(mContext);
         imageView.setImageResource(mThumbIds[position]);
         imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-        imageView.setLayoutParams(new GridView.LayoutParams(70, 70));
+        imageView.setLayoutParams(new GridView.LayoutParams(150, 150));
         return imageView;
 	}
 

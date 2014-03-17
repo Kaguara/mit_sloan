@@ -12,13 +12,11 @@
     </RadioGroup>
 
 </LinearLayout> -->
-
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/scroll_view"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
 
     <LinearLayout
         android:orientation="vertical"
@@ -40,6 +38,8 @@
 
             <!-- Q1 -->
             <TextView style="@style/FeedbackQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="session_rating_label"
                 android:textColor="#FFFFFF"
                 android:textAlignment="viewStart" />
@@ -57,18 +57,25 @@
                 <TextView
                     style="@style/FeedbackQuestionGuideText"
                     android:textColor="#FFFFFF"
-                    android:text="@string/session_feedback_notgreat" />
+                    android:text="@string/session_feedback_notgreat" 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
 
                 <TextView
                     style="@style/FeedbackQuestionGuideText.Right"
                     android:textColor="#FFFFFF"
-                    android:text="@string/session_feedback_great" />
+                    android:text="@string/session_feedback_great"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     />
             </LinearLayout>
 
             <!-- Q1 -->
             <TextView style="@style/FeedbackQuestion"
                 android:textColor="#FFFFFF"
-                android:text="@string/session_feedback_relevance" />
+                android:text="@string/session_feedback_relevance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
             <include android:id="@+id/session_feedback_q1_container"
                 layout="@layout/rating_bar"
@@ -83,18 +90,24 @@
                 <TextView
                     style="@style/FeedbackQuestionGuideText"
                     android:textColor="#FFFFFF"
-                    android:text="@string/session_feedback_notrel" />
+                    android:text="@string/session_feedback_notrel" 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
 
                 <TextView
                     style="@style/FeedbackQuestionGuideText.Right"
                     android:textColor="#FFFFFF"
-                    android:text="@string/session_feedback_rel" />
+                    android:text="@string/session_feedback_rel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
             </LinearLayout>
 
             <!-- Q2 -->
             <TextView style="@style/FeedbackQuestion"
                 android:textColor="#FFFFFF"
-                android:text="@string/session_feedback_content" />
+                android:text="@string/session_feedback_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
             <include android:id="@+id/session_feedback_q2_container"
                 layout="@layout/rating_bar"
@@ -109,18 +122,24 @@
                 <TextView
                     style="@style/FeedbackQuestionGuideText"
                     android:textColor="#FFFFFF"
-                    android:text="@string/session_feedback_basic" />
+                    android:text="@string/session_feedback_basic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
                 <TextView
                     style="@style/FeedbackQuestionGuideText.Right"
                     android:textColor="#FFFFFF"
-                    android:text="@string/session_feedback_advanced" />
+                    android:text="@string/session_feedback_advanced"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
             </LinearLayout>
 
             <!-- Q3 -->
             <TextView style="@style/FeedbackQuestion"
                 android:textColor="#FFFFFF"
-                android:text="@string/session_feedback_speaker_quality" />
+                android:text="@string/session_feedback_speaker_quality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
             <include android:id="@+id/session_feedback_q3_container"
                 layout="@layout/rating_bar"
@@ -135,18 +154,24 @@
                 <TextView
                     style="@style/FeedbackQuestionGuideText"
                     android:textColor="#FFFFFF"
-                    android:text="@string/session_feedback_poor" />
+                    android:text="@string/session_feedback_poor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
                 <TextView
                     style="@style/FeedbackQuestionGuideText.Right"
                     android:textColor="#FFFFFF"
-                    android:text="@string/session_feedback_outstanding" />
+                    android:text="@string/session_feedback_outstanding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
             </LinearLayout>
 
             <!-- Q4 -->
             <TextView style="@style/FeedbackQuestion"
                 android:textColor="#FFFFFF"
-                android:text="@string/session_feedback_6months" />
+                android:text="@string/session_feedback_6months"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
             <RadioGroup
                 android:id="@+id/session_feedback_q4"
@@ -173,7 +198,9 @@
 
             <TextView style="@style/FeedbackQuestion"
                 android:textColor="#FFFFFF"
-                android:text="@string/session_feedback_other" />
+                android:text="@string/session_feedback_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
             <EditText
                 android:id="@+id/session_feedback_comments"

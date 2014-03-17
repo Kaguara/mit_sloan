@@ -1,6 +1,6 @@
 package com.example.mitsloan2.sqlite.model;
 
-public class SpeakerModel {
+public class SpeakerItem {
 	
 	int ID;
 	String speaker_name;
@@ -10,10 +10,10 @@ public class SpeakerModel {
 	String speaker_photo;
 	
 	// constructors
-    public SpeakerModel() {
+    public SpeakerItem() {
     }
  
-    public SpeakerModel(String speaker_name, String speaker_title, String speaker_description, String speaker_contacts, String photo){
+    public SpeakerItem(String speaker_name, String speaker_title, String speaker_description, String speaker_contacts, String photo){
         this.speaker_name = speaker_name;
         this.speaker_title = speaker_title;
         this.speaker_description =  speaker_description;

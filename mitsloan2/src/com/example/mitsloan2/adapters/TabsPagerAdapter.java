@@ -2,7 +2,7 @@ package com.example.mitsloan2.adapters;
 
 import com.example.mitsloan2.fragments.MapFragment;
 import com.example.mitsloan2.fragments.ScheduleFragment;
-import com.example.mitsloan2.fragments.SpeakersFragment;
+import com.example.mitsloan2.fragments.MyScheduleFragment;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -23,7 +23,7 @@ public class TabsPagerAdapter extends FragmentPagerAdapter{
             return new ScheduleFragment();
         case 1:
             // Games fragment activity
-            return new SpeakersFragment();
+            return new MyScheduleFragment();
         case 2:
             // Movies fragment activity
             return new MapFragment();

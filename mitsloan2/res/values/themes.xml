@@ -11,11 +11,11 @@
 
     <!-- ActionBar styles -->
     <style name="MyActionBar"
-           parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
-        <item name="android:background">@drawable/actionbar_background</item>
+           parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="android:background">#7D0505</item>
 
         <!-- Support library compatibility -->
-        <item name="background">@drawable/actionbar_background</item>
+        <!-- item name="background">#7D0505</item> --> 
     </style>
     
 </resources>

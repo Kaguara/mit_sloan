@@ -28,6 +28,7 @@ public class XMLParser {
     public XMLParser() {
  
     }
+    private String LOGTAG = "XML Parser"; 
  
     /**
      * Getting XML from URL making HTTP request
@@ -107,9 +108,14 @@ public class XMLParser {
       * @param Element node
       * @param key string
       * */
-     public String getValue(Element e, String str) {
-            NodeList n = e.getElementsByTagName(str);
+     public String getValue(Element elm, String str) {
+    	 try{
+            NodeList n = elm.getElementsByTagName(str);
             return this.getElementValue(n.item(0));
+    	 }catch (Exception e){
+    		 Log.e(LOGTAG, "Could not retrieve value from the XML", e);
+    		 return " ";
+    	 }
         }
 
 }
