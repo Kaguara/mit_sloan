@@ -80,27 +80,6 @@
         "body" : "autoTemplate(backendResponse)"
       }
     },
-    "deviceinfoendpoint.getDeviceInfo" : {
-      "path" : "deviceinfo/{id}",
-      "httpMethod" : "GET",
-      "authLevel" : "NONE",
-      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
-      "audiences" : [ ],
-      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
-      "rosyMethod" : "com.example.mitsloan2.DeviceInfoEndpoint.getDeviceInfo",
-      "request" : {
-        "parameters" : {
-          "id" : {
-            "type" : "string",
-            "required" : true
-          }
-        },
-        "body" : "empty"
-      },
-      "response" : {
-        "body" : "autoTemplate(backendResponse)"
-      }
-    },
     "deviceinfoendpoint.listDeviceInfo" : {
       "path" : "deviceinfo",
       "httpMethod" : "GET",
@@ -118,6 +97,27 @@
           "limit" : {
             "type" : "int32",
             "required" : false
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "deviceinfoendpoint.getDeviceInfo" : {
+      "path" : "deviceinfo/{id}",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.example.mitsloan2.DeviceInfoEndpoint.getDeviceInfo",
+      "request" : {
+        "parameters" : {
+          "id" : {
+            "type" : "string",
+            "required" : true
           }
         },
         "body" : "empty"
@@ -180,14 +180,14 @@
           "$ref" : "DeviceInfo"
         }
       },
-      "com.example.mitsloan2.DeviceInfoEndpoint.getDeviceInfo" : {
-        "response" : {
-          "$ref" : "DeviceInfo"
-        }
-      },
       "com.example.mitsloan2.DeviceInfoEndpoint.listDeviceInfo" : {
         "response" : {
           "$ref" : "CollectionResponse_DeviceInfo"
+        }
+      },
+      "com.example.mitsloan2.DeviceInfoEndpoint.getDeviceInfo" : {
+        "response" : {
+          "$ref" : "DeviceInfo"
         }
       }
     }

@@ -3,13 +3,22 @@
 
     <string name="app_name">INNOVATE 2014</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="feedback">FEEDBACK</string>
     <string name="action_search">search</string>
     <string name="action_settings">settings</string>
+    <string name="session_rating_label">session_rating_label</string>
     <string name="sponsors">Sponsers</string>
     <string name="keynote">2014 Conference Keynotes</string>
     <string name="energy">Energy – Lighting Up Africa</string>
     <string name="healthcare">Healthcare Innovations</string>
+    <string name="healthcare_panel_description">Technology Innovation to Improve Healthcare in Africa: HOPE or HYPE?\n
+        
+In Sub-Saharan Africa, there are only 2.5 health workers for every 1000 people. 
+To compound on this issue, Sub-Saharan Africa is dealing with roughly 25% of the world’s disease cases. 
+In this panel discussion we will be looking at how recent technology innovations have changed the healthcare landscape in Africa.  
+Are these technological innovations leading us in the right direction to solve many of the challenges that the 
+African healthcare system is facing?  Or are these technological innovations mere distractions to the true solutions that are required?  
+What is the next big idea required from entrepreneurs in Africa?</string>
     <string name="investments">Investment in Africa</string>
     <string name="technology">Technology Disrupting Africa</string>
     <string name="venture">Venture Incubation</string>

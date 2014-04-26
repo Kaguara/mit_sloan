@@ -5,7 +5,9 @@
     <TextView 
         android:id="@+id/tv_paneldescription"
         android:layout_width="match_parent"
-        android:layout_height="fill_parent"/>
+        android:layout_height="wrap_content"
+        android:hint="panel description goes here..."
+        android:text="@string/healthcare_panel_description"/>
         
 	<GridView 
 	    android:id="@+id/panel_grid_view"
@@ -27,6 +29,6 @@
 	    android:layout_height="wrap_content"
 	    android:layout_below="@id/panel_grid_view"
 	    android:background="#7D0505"
-	    android:text="FEEDBACK"
+	    android:text="@string/feedback"
 	    android:textColor="#ffffff"/>
 </RelativeLayout>

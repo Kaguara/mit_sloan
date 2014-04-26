@@ -105,7 +105,7 @@
 # onClick res/layout/list_row.xml #generated:109
 -keepclassmembers class * { *** addToMySchedule(...); }
 
-# onClick res/layout/speakers_grid.xml #generated:23
+# onClick res/layout/speakers_grid.xml #generated:25
 -keepclassmembers class * { *** launchFeedack(...); }
 
 # onClick res/layout/activity_panel_selection.xml #generated:25
