@@ -4,7 +4,7 @@ import com.example.mitsloan2.adapters.TabsPagerAdapter;
 import com.example.mitsloan2.sqlite.helper.DatabaseHelper;
 import com.example.mitsloan2.sqlite.model.MyScheduleItem;
 import com.example.mitsloan2.sqlite.model.ScheduleItem;
-
+//android lib imports
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.app.ActionBar.Tab;
@@ -22,6 +22,12 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
+//parse imports
+import com.parse.Parse;
+import com.parse.ParseAnalytics;
+import com.parse.ParseObject;
+import com.parse.ParseInstallation;
+import com.parse.PushService;
 
 public class HomeScreen extends ActionBarActivity implements TabListener{
 
@@ -91,6 +97,18 @@ public class HomeScreen extends ActionBarActivity implements TabListener{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_screen);
+        
+        //initialize Parse for backend/cloud support
+        Parse.initialize(this, "PUXTA9zRvdwXpCDMa1U8ErnSCPjQmHSvu2cdvMPG", "QIOJXwayIAQ2kfYDe7iw0yGfbFI8KGKejOiXoioM");
+        
+        //testing Parse funcionality
+        ParseObject testObject = new ParseObject("TestObject");
+        testObject.put("foo", "bar");
+        testObject.saveInBackground();
+        
+        //defining default activity to handle push notifications
+        PushService.setDefaultPushCallback(this, HomeScreen.class);
+        ParseInstallation.getCurrentInstallation().saveInBackground();
         
         //initializing database
         DatabaseHelper dbHelper = new DatabaseHelper(this);

@@ -9,6 +9,7 @@ public class MyScheduleItem {
 	String panel_description;
 	String speakers;
 	String location;
+	String userId;
 	
 	// constructors
     public MyScheduleItem() {
